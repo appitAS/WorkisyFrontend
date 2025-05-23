@@ -1,0 +1,268 @@
+/* Modern Contact Page Styles - Light Theme */
+.workisy-contact-container {
+  background: #f8fafc;
+  color: #0a0e17;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 4rem;
+}
+
+.workisy-contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.workisy-contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #0066ff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.workisy-contact-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.workisy-contact-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.workisy-contact-methods {
+  display: grid;
+  gap: 2rem;
+}
+
+.workisy-contact-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.workisy-contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon-bg {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #0066ff;
+}
+
+.workisy-contact-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.workisy-contact-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.workisy-contact-card a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.workisy-contact-card a:hover {
+  opacity: 0.8;
+}
+
+/* Contact Form Styles */
+.workisy-contact-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.form-header p {
+  color: #64748b;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1e293b;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+
+.form-group label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #64748b;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  padding: 0 0.25rem;
+  background: #f1f5f9;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+  top: -0.6rem;
+  font-size: 0.8rem;
+  background: #ffffff;
+  color: #0066ff;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #0066ff, #00d4ff);
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+.arrow {
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.submit-btn:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* Social & Map Section */
+.workisy-contact-social {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon.linkedin { background: #0a66c2; }
+.social-icon.twitter { background: #1da1f2; }
+.social-icon.instagram { 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.office-map {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 1rem;
+}
+
+.office-map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+  .workisy-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .workisy-contact-container {
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+  }
+  
+  .workisy-contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .office-map iframe {
+    height: 300px;
+  }
+  
+  .social-links {
+    flex-wrap: wrap;
+  }
+}

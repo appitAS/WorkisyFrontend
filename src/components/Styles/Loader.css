@@ -1,0 +1,78 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  scale: 200%;
+}
+
+.loader-circle {
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.loader-circle.outer {
+  width: 80px;
+  height: 80px;
+  border: 3px dashed #215ead;
+  animation: rotate 10s linear infinite;
+}
+
+.loader-circle.inner {
+  width: 50px;
+  height: 50px;
+  border: 2px dotted #215ead;
+  animation: rotate-reverse 8s linear infinite;
+}
+
+.loader-dot {
+  /* Basic styles for the dot */
+  width: 20px;
+  height: 20px;
+  background-color: #215ead;
+  border-radius: 50%;
+  position: absolute; /* Ensure dots are positioned within their parent */
+}
+
+.loader-dot.single-dot {
+  /* Specific styles for the single dot on the outer circle */
+  width: 16px;
+  height: 16px;
+  background-color: #215ead;
+  border-radius: 50%;
+  /* Positioning is handled in JSX */
+  /* Added glowing effect */
+  box-shadow: 0 0 8px 4px rgba(33, 135, 173, 0.6), /* Inner glow with blue color */
+              0 0 16px 8px rgba(33, 135, 173, 0.4), /* Medium glow with blue color */
+              0 0 24px 12px rgba(33, 135, 173, 0.2); /* Outer glow with blue color */
+}
+
+.loader-dot.small-dot {
+  /* Styles for the multiple small dots */
+  width: 4px;
+  height: 4px;
+  background-color: #215ead;
+  border-radius: 50%;
+  /* Positioning and animation are handled in JSX */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

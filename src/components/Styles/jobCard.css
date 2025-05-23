@@ -1,0 +1,251 @@
+.jobcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.jobcard:hover {
+  box-shadow: 0 4px 24px rgba(33, 94, 173, 0.18);
+  transform: translateY(-8px);
+}
+
+.jobcard-head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.jobcard-score-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: rgba(33, 94, 173, 0.1);
+  color: #215ead;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+  box-shadow: 0 1px 4px rgba(33, 94, 173, 0.08);
+}
+
+.jobcard-left {
+  margin-top: 36px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.jobcard-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 94, 173, 0.1);
+}
+
+.jobcard-logo-initial {
+  font-size: 28px;
+  font-weight: 800;
+  color: #215ead;
+}
+
+.jobcard-text-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+}
+
+.jobcard-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.jobcard-company {
+  font-size: 1rem;
+  color: #215ead;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.jobcard-location {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0;
+}
+
+.jobcard-details {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.jobcard-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.98rem;
+  color: #444;
+  gap: 4px;
+}
+
+.jobcard-icon {
+  color: #215ead;
+  font-size: 1.1em;
+  margin-right: 2px;
+}
+
+.jobcard-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 18px;
+  margin-top: 0;
+  min-height: auto;
+}
+
+.jobcard-skills {
+  font-size: 0.97rem;
+  color: #444;
+  background: #fff3e0;
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-weight: 500;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jobcard-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.jobcard-date {
+  font-size: 0.93rem;
+  color: #215ead;
+  font-weight: 500;
+}
+
+.jobcard-button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(33, 94, 173, 0.10);
+  background: #215ead;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+
+.jobcard-button:hover {
+  background: #1a4f96;
+}
+
+.jobcard {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 28px 28px 22px 28px;
+  width: 370px;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0;
+  transition: box-shadow 0.2s, transform 0.2s ease-out;
+  overflow: hidden;
+}
+
+.jobcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: #215ead;
+  box-shadow: 0 0 24px #215ead; /* Softer outer glow */
+  border-radius: 2px 0 0 2px;
+}
+
+.jobcard-badges-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.jobcard-badges {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.jobcard-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgba(33, 94, 173, 0.1);
+  color: #215ead;
+  box-shadow: 0 1px 4px rgba(33, 94, 173, 0.08);
+}
+
+.jobcard-badge-platform {
+  border-radius: 2px;
+}
+
+.jobcard-badge-faded {
+  background: rgba(33, 94, 173, 0.1);
+  color: #215ead;
+}
+
+
+.jobcard-desc-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 360px) { /* Adjust breakpoint as needed */
+  .jobcard-badges-row {
+    flex-direction: column; /* Stack the two badge groups */
+    align-items: flex-start; /* Align stacked groups to the start */
+    gap: 10px; /* Add space between stacked groups */
+  }
+
+  .jobcard-description {
+    font-size: 0.8rem; /* Reduce font size */
+    margin-bottom: 12px; /* Adjust margin */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+  
+  .jobcard-badges {
+    flex-wrap: wrap; /* Allow badges to wrap within their group */
+    gap: 6px; /* Adjust gap between wrapped badges */
+  }
+  
+  .jobcard-badge {
+    padding: 3px 8px; /* Reduce padding */
+    font-size: 0.8rem; /* Reduce font size */
+    border-radius: 10px; /* Slightly reduce border-radius */
+  }
+}

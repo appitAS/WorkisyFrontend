@@ -1,0 +1,239 @@
+.custom-navbar {
+  background:white;
+  color:black;
+  padding: 1rem 5rem;
+  font-family: 'Segoe UI', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-logo img {
+  width:95px;
+  height:40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.dropdown-icon {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -5rem;
+  background: white;
+  border-radius: 0.5rem;
+  min-width: 220px;
+  padding: 0.5rem 1rem;
+ box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background: rgb(236, 236, 236);
+  color:#0a1744;
+  font-weight: 500;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.user-email {
+  font-size: 0.6rem;
+  opacity: 0.8;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-mobile-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-icon {
+  font-size: 19px;
+  color: white;
+  margin-left:-60px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back-icon:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.nav-top a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .back-icon {
+    margin-right:20px ;
+  }
+  .custom-navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+   
+  }
+
+  .nav-links.active {
+    max-height: 1000px;
+    margin-top: 1rem;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #fff;
+    border-radius:5px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item span {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+
+  .dropdown-menu a {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Show avatar only */
+  .mobile-avatar {
+    display: flex;
+  }
+
+  .desktop-profile {
+    display: none;
+  }
+
+  .user-details {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-avatar {
+    display: none;
+  }
+
+  .desktop-profile {
+    display: flex;
+  }
+}
+

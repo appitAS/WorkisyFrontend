@@ -1,0 +1,163 @@
+/* Modern CSS Styles */
+.workisy-aboutus-container {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0a1744;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+
+.workisy-aboutus-hero {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  color: #0a1744;
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.workisy-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.workisy-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.workisy-hero-subtext {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.workisy-hero-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.workisy-stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: -3rem auto 4rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.workisy-stat-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.workisy-stat-item h3 {
+  font-size: 2.5rem;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+
+.workisy-aboutus-cards {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.workisy-aboutus-card {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.workisy-aboutus-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.vision-card {
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #6366f1;
+  margin-bottom: 1.5rem;
+}
+
+.workisy-aboutus-why {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.workisy-aboutus-why h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.workisy-aboutus-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.workisy-aboutus-feature-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.workisy-aboutus-feature-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .workisy-aboutus-cards,
+  .workisy-stats-container,
+  .workisy-aboutus-features,
+  .workisy-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workisy-hero-content h1 {
+    font-size: 1.4rem;
+  }
+  .workisy-hero-subtext{
+    font-size: 1rem;
+  }
+
+  .workisy-stat-item h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .workisy-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .workisy-stats-container {
+    margin-top: -2rem;
+  }
+}
